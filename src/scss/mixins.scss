@@ -1,0 +1,15 @@
+// BASIC TRANSITON
+
+@mixin transition($time) {
+  transition: all $time ease-in-out;
+}
+
+
+// SIZES
+
+@mixin sizes($x, $y) {
+    width: $x;
+    height: $y;
+}
+
+// SPECIFICS

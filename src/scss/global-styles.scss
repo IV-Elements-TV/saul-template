@@ -1,0 +1,60 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition(.2s);
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+i {
+    cursor: default;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div {
+    margin: 0;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.active {
+    color: $main-color-2 !important;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.hide {
+    display: none !important;
+}
+
+.hide-nav {
+    margin-left: -70%;
+    @include transition(.2s);
+}
+
+.container {
+    @include media-breakpoint-down(sm) {
+        padding: 0 3%;
+    }
