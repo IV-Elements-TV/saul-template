@@ -1,0 +1,61 @@
+.download {
+    background: url(../img/download-bg.jpg);
+    @include bg-cover;
+    @include parallax;
+    @include section-padding;
+    
+    .download-heading {
+        margin-bottom: 7rem;
+        
+        h2 {
+            color: $white;
+        }     
+        
+    }    
+        
+    .download-btn {
+
+        div {
+            @include btn-1;
+            color: $white;
+            box-shadow: 0 0 0 .2rem $white;
+            
+            span {
+                margin-left: 1rem;
+            }
+            
+        }
+
+    }
+
+    .download-apple-btn {
+        display: flex;
+        justify-content: flex-end;
+        
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+        }        
+        
+    }
+
+    .download-android-btn {
+        display: flex;
+        justify-content: center;
+        
+        @include media-breakpoint-down(sm) {
+            margin: 4rem 0;
+        }     
+        
+    }
+
+    .download-windows-btn {
+        display: flex;
+        justify-content: flex-start;
+        
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+        }         
+        
+    } 
+    
+}

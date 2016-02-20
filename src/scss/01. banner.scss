@@ -1,0 +1,112 @@
+.banner {
+    @include sizes(100%, 72rem);
+    background: url(../img/banner-bg.jpg);
+    @include bg-cover;
+    overflow: hidden;
+    
+    .banner-content {
+        height: 72rem;
+        color: $white;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        overflow: hidden;
+        padding-left: 2rem;
+        
+        @include media-breakpoint-down(md) {
+            align-items: center;
+            text-align: center;
+        }        
+        
+        h1 {            
+            font-size: 6.4rem;
+            line-height: 6.4rem;
+            font-family: $os;
+            font-weight: 700;
+            
+            @include media-breakpoint-down(lg) {
+                font-size: 6.4rem * 0.9;
+                line-height: 6.4rem * 0.9;
+            } 
+            
+            @include media-breakpoint-down(xs) {
+                font-size: 6.4rem * 0.7;
+                line-height: 6.4rem * 0.7;
+            }            
+            
+        }
+        
+        h2 {
+            font-size: 3.8rem;
+            line-height: 3.8rem;
+            font-family: $os;
+            font-weight: 300;
+            padding: 4.2rem 0;
+            
+            @include media-breakpoint-down(lg) {
+                font-size: 3.8rem * 0.9;
+                line-height: 3.8rem * 0.9;
+                padding-top: 4.2rem * 0.9;
+                padding-bottom: 4.2rem * 0.9;
+            } 
+            
+            @include media-breakpoint-down(xs) {
+                font-size: 3.8rem * 0.7;
+                line-height: 3.8rem * 0.7;
+                padding-top: 4.2rem * 0.7;
+                padding-bottom: 4.2rem * 0.7;                
+            }             
+            
+        }
+        
+        p {
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+            font-family: $ss;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 4.2rem;
+            
+            @include media-breakpoint-down(xs) {
+                font-size: 1.6rem * 0.9;
+                line-height: 1.6rem * 0.9;
+            }            
+            
+        }
+        
+        .banner-content-buttons {
+            display: flex;
+            flex-flow: row nowrap;
+            
+            .banner-content-buttons-btn-1 {
+                @include btn-1(15.2rem, 4.7rem);
+                box-shadow: 0 0 0 .2rem $white;
+                margin-right: 2rem;
+            }
+            
+            .banner-content-buttons-btn-2 {
+                @include btn-2(15.2rem, 4.7rem);
+            }            
+            
+        }
+        
+        
+    }
+    
+    .banner-phone {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+        
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+    }
+    
+}

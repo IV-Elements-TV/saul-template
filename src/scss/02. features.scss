@@ -1,0 +1,104 @@
+.features {
+    @include section-padding;    
+    
+    .features-content {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        
+        @include media-breakpoint-down(xs) {
+            flex-flow: column nowrap;
+        }    
+        
+        .feature-box {
+            
+            h3 {
+                color: $dark-main-color-2;
+                font-size: 2rem;
+                line-height: 2rem;
+                font-weight: 400;
+                padding-bottom: 3.4rem;                
+            }
+            
+            p {
+                color: $light-main-color-2;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                font-weight: 300;                
+            }
+            
+            .feature-icon {
+                @include sizes(5.4rem, 5.4rem);
+                color: $main-color-2;
+                font-size: 3.2rem;
+                line-height: 3.2rem;
+                padding: 1rem;
+                border: .2rem solid $main-color-2;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            
+        }        
+        
+        
+        .feature-box-left {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-flow: row nowrap;
+            margin: 5em 0;
+            
+            @include media-breakpoint-down(sm) {
+                flex-flow: row-reverse nowrap; 
+                text-align: left;
+            }             
+            
+            @include media-breakpoint-down(xs) {
+                &:nth-child(2) {
+                    margin-bottom: 0;
+                }
+            }            
+            
+            .feature-icon {
+                margin-left: 2rem;
+                
+                @include media-breakpoint-down(sm) {
+                    margin-left: 0; 
+                    margin-right: 2rem;
+                }                
+                
+            }
+            
+        }
+        
+        .feature-box-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-flow: row nowrap;
+            margin: 5rem 0;
+            
+            .feature-icon {
+                margin-right: 2rem;
+            }
+            
+        }        
+        
+        .features-app {
+            display: flex;
+            justify-content: center;
+            
+            @include media-breakpoint-down(sm) {
+                display: none;              
+            }             
+            
+        }
+        
+    }
+    
+}

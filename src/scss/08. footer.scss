@@ -1,0 +1,49 @@
+.footer {
+    @include section-padding;
+    text-align: center;
+    
+    h2 {
+        color: $main-color-2;
+        font-size: 3.6rem;
+        line-height: 3.6rem;
+        font-weight: 400;
+        margin-bottom: 5rem;
+    }
+    
+    .footer-social-icons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+        
+        a {
+            color: $main-color-2;
+            font-size: 3.2rem;  
+            
+            &:hover {
+                color: $main-color-1;    
+            }
+            
+            i {
+                cursor: pointer;
+            }
+            
+        }
+        
+    }
+    
+    p {
+        @include p;
+        
+        a {
+            color: $main-color-2;
+            
+            &:hover {
+                color: $main-color-1;  
+            }
+            
+        }
+        
+    }
+    
+}

@@ -3,6 +3,9 @@
 @import 'bootstrap/bootstrap-grid.scss';
 @import 'bootstrap/_utilities-responsive.scss';
 
+@import 'slick/slick.scss';
+@import 'slick/slick-theme.scss';
+
 /* ---------------------------------- */
 
 @import 'variables.scss';
@@ -11,13 +14,11 @@
 
 /* ---------------------------------- */
 
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
+@import '01. banner.scss';
+@import '02. features.scss';
+@import '03. newsletter.scss';
+@import '04. prices.scss';
+@import '05. tweets.scss';
+@import '06. screenshots.scss';
+@import '07. download.scss';
+@import '08. footer.scss';

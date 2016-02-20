@@ -1,0 +1,18 @@
+.screenshots {
+    @include section-padding;
+    
+    .screenshots-heading {
+        margin-bottom: 4rem;
+    }
+    
+    .screenshots-slider {
+        
+        img {
+            max-width: 100% !important;
+            height: 38rem;
+            margin: 0 4rem;
+        }
+        
+    }
+    
+}

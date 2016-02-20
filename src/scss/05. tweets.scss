@@ -1,0 +1,46 @@
+.tweets {
+    background: url(../img/tweets-bg.jpg);
+    @include bg-cover;
+    @include parallax;
+    @include section-padding;
+    
+    .tweets-heading {
+        
+        h2 {
+            color: $white;
+        }
+        
+        p {
+            color: $white;
+        }
+        
+    }
+    
+    .tweets-content {
+        
+        .slick-arrow {
+            display: none;
+        }
+        
+        p {
+            @include p;
+            color: $white;
+            font-size: 1.6rem;
+            margin-top: 5rem;
+            text-align: center;                 
+        }
+        
+    }
+    
+    .tweets-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+
+        .tweets-show-more-btn {
+            @include btn-2;
+        }
+
+    }    
+    
+}
