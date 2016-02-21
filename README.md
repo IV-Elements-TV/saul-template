@@ -1,4 +1,4 @@
-# saul-template
+# Saul Template
 Free Landing Mobile App Responsive Template
 
 Documentation comming soon.
